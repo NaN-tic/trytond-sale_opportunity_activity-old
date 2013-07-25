@@ -1,4 +1,3 @@
-
 This Module runs with the Tryton application platform.
 
 Installing
@@ -13,11 +12,11 @@ If you encounter any problems with this module, please don't hesitate to ask
 questions on the NaN·tic bug tracker, mailing list,
 wiki or IRC channel:
 
-  http://doc.tryton-erp.es/
-  http://bitbucket.org/nantic/trytond-sale_opportunity_activity
-  http://groups.tryton.org/
-  http://wiki.tryton.org/
-  irc://irc.freenode.net/tryton
+  * http://doc.tryton-erp.es/
+  * http://bitbucket.org/nantic/trytond-sale_opportunity_activity
+  * http://groups.tryton.org/
+  * http://wiki.tryton.org/
+  * irc://irc.freenode.net/tryton
 
 License
 -------
