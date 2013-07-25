@@ -9,4 +9,12 @@ contains the full copyright notices and license terms. -->
             <field name="activities" colspan="4"/>
         </page>
     </xpath>
+
+    <xpath
+        expr="/form/notebook/page[@id='opportunity']/field[@name='end_date']"
+        position="after">
+        <label name="last_action_date"/>
+        <field name="last_action_date"/>
+    </xpath>
+
 </data>

@@ -7,6 +7,5 @@ from .activity import *
 
 def register():
     Pool.register(
-        Activity,
         SaleOpportunity,
         module='sale_opportunity_activity', type_='model')
