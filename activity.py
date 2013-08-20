@@ -22,6 +22,7 @@ class SaleOpportunity:
         if not self.activities:
             return None
         Activity = Pool().get('activity.activity')
-        act = Activity.search([('resource', '=', 'sale.opportunity,%s'%self.id)],
-            order=[('dtstart', 'desc')], limit=1)
+        act = Activity.search([
+                ('resource', '=', 'sale.opportunity,%s'%self.id)
+                ], order=[('dtstart', 'desc')], limit=1)
         return act and act[0].dtstart or None
