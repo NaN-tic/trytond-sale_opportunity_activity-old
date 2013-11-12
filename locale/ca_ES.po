@@ -1,0 +1,15 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:sale.opportunity,activities:"
+msgid "Activities"
+msgstr "Activitats"
+
+msgctxt "field:sale.opportunity,last_action_date:"
+msgid "Last Action"
+msgstr "Última acció"
+
+msgctxt "view:sale.opportunity:"
+msgid "Activities"
+msgstr "Activitats"
