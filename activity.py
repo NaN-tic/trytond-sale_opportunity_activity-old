@@ -39,3 +39,14 @@ class Activity:
         if opportunity_party_id:
             return opportunity_party_id
         return super(Activity, cls).default_party()
+
+    # TODO: On 3.4 not necessary any more.
+    @classmethod
+    def default_allowed_contacts(cls):
+        pool = Pool()
+        Activity = pool.get('activity.activity')
+        Party = pool.get('party.party')
+        activity = Activity()
+        activity.party = Party(cls.default_party())
+        allowed = activity.on_change_with_allowed_contacts()
+        return allowed
