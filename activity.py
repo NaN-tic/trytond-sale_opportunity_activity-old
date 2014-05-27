@@ -47,6 +47,10 @@ class Activity:
         Activity = pool.get('activity.activity')
         Party = pool.get('party.party')
         activity = Activity()
-        activity.party = Party(cls.default_party())
+        party_id = cls.default_party()
+        if party_id:
+            activity.party = Party(cls.default_party())
+        else:
+            activity.party = None
         allowed = activity.on_change_with_allowed_contacts()
         return allowed
