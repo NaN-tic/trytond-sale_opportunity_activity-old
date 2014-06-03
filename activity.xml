@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--The COPYRIGHT file at the top level of this repository             
-contains the full copyright notices and license terms. -->
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
 <tryton>
     <data>
         <record model="ir.ui.view" id="sale_opportunity_activity_form_view">
@@ -8,9 +8,7 @@ contains the full copyright notices and license terms. -->
             <field name="inherit" ref="sale_opportunity.opportunity_view_form"/>
             <field name="name">sale_opportunity_form</field>
         </record>
-    </data>
-    
-    <data>
+
         <record model="ir.ui.view" id="sale_opportunity_activity_tree_view">
             <field name="model">sale.opportunity</field>
             <field name="inherit" ref="sale_opportunity.opportunity_view_tree"/>
