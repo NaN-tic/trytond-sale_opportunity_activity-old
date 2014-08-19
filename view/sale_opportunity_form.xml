@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--The COPYRIGHT file at the top level of this repository             
-contains the full copyright notices and license terms. -->
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
 <data>
     <xpath
         expr="/form/notebook"
@@ -15,6 +15,9 @@ contains the full copyright notices and license terms. -->
         position="after">
         <label name="last_action_date"/>
         <field name="last_action_date"/>
+        <label name="next_action_date"/>
+        <field name="next_action_date"/>
+        <label name="next_action"/>
+        <field name="next_action"/>
     </xpath>
-
 </data>
