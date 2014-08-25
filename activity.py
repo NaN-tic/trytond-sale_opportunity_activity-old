@@ -52,7 +52,6 @@ class SaleOpportunity:
             activities = Activity.search([
                     ('resource', '=', 'sale.opportunity,%s' % opportunity.id),
                     ('state', '=', 'planned'),
-                    ('dtstart', '>=', today),
                     ],
                 order=[('dtstart', 'asc')], limit=1)
             if not activities:
