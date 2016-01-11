@@ -5,8 +5,10 @@
     <xpath
         expr="/tree/field[@name='probability']"
         position="after">
-        <field name="last_action_date"/>
-        <field name="next_action_date"/>
+        <field name="last_action_date" widget="date"/>
+        <field name="last_action_date" widget="time" string="Last Action Time"/>
+        <field name="next_action_date" widget="date"/>
+        <field name="next_action_date" widget="time" string="Next Action Time"/>
         <field name="next_action"/>
     </xpath>
 </data>
