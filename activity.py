@@ -5,11 +5,11 @@ from trytond.pool import PoolMeta, Pool
 from trytond.pyson import Eval
 from trytond.transaction import Transaction
 
-__metaclass__ = PoolMeta
 __all__ = ['Activity', 'SaleOpportunity']
 
 
 class SaleOpportunity:
+    __metaclass__ = PoolMeta
     __name__ = 'sale.opportunity'
 
     activities = fields.One2Many('activity.activity', 'resource',
@@ -61,6 +61,7 @@ class SaleOpportunity:
 
 
 class Activity:
+    __metaclass__ = PoolMeta
     __name__ = 'activity.activity'
 
     @classmethod
